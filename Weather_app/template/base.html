@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>{% block title %} Weather App!{% endblock %}</title>
+        {% block head %} {% endblock %}
+    </head>
+
+    <body>
+        <a href="{% url 'info' %}">Weather</a>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
